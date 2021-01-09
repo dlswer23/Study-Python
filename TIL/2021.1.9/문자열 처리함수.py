@@ -17,5 +17,11 @@ index = python.index("n",index+1)
 print(index)
 
 
-print(python.find("n"))
-#n이 들어가있는 위치를 알려준다.
+print(python.find("Java"))
+#java가 저기에 있는지 확인해준다.
+#안나오므로 -1이 나오게 된다.
+
+print("hi")
+
+print(python.count("n"))
+#n이 몇번이 들어가는지 count해준다.
