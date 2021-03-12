@@ -1,0 +1,237 @@
+Last login: Fri Mar 12 09:58:45 on ttys000
+mac@ieunbyeol ~ % python3
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 8+5
+13
+>>> 8-5
+3
+>>> 8 // 5
+1
+>>> 8 % 5
+3
+>>> 8 ** 5
+32768
+>>> 8 * 233
+1864
+>>> 3 /2
+1.5
+>>> 6/3
+2.0
+>>> 64/4
+16.0
+>>> 64//4
+16
+>>> 64//4.0
+16.0
+>>> age = 18
+>>> print(age)
+18
+>>> after2_2 = 2
+>>> print(age + after_2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'after_2' is not defined
+>>> print(age + after2_2)
+20
+>>> result = age - after2_2
+>>> print(result)
+16
+>>> val = 30
+>>> val A = 30
+  File "<stdin>", line 1
+    val A = 30
+        ^
+SyntaxError: invalid syntax
+>>> v1 = 25
+>>> v2 = 40
+>>> print(v1+v2)
+65
+>>> x = 3 * 50
+>>> y = x + 120
+>>> z = y / 3
+>>> print(z)
+90.0
+>>> v = 25
+>>> y = 25
+>>> v = 30
+>>> print(v)
+30
+>>> //가장최근의 것이 출력 된다 
+  File "<stdin>", line 1
+    //가장최근의 것이 출력 된다 
+    ^
+SyntaxError: invalid syntax
+>>> x = 100
+>>> print(x)
+100
+>>> x = "Hi"
+>>> print(x)
+Hi
+>>> x = 3 * 5-
+  File "<stdin>", line 1
+    x = 3 * 5-
+              ^
+SyntaxError: invalid syntax
+>>> x = 3 * 50
+>>> print(x)
+150
+>>> x,y = 0, 707
+>>> x = y
+>>> print(x,y)
+707 707
+>>> x = y= z = 10
+>>> x
+10
+>>> 
+>>> y
+10
+>>> z
+10
+>>> 
+>>> a = 20 
+>>> b = 30 
+>>> a = b
+>>> print(a,b)
+30 30
+>>> a = 20 
+>>> b = 40 
+>>> c = a
+>>> b = c
+>>> b = c 
+>>> a= b 
+>>> print(a,b)
+20 20
+>>> a = 20
+>>> 
+>>> a = 20 
+>>> b = 30 
+>>> a,b = b,a
+>>> print(a,b)
+30 20
+>>> age = 18
+>>> age += 2
+>>> age -= 1
+>>> age *= 2
+>>> age /= 2
+>>> age //= 2
+>>> age %= 6
+>>> age **= 3
+>>> print(age)
+27.0
+>>> 
+>>> age = 18
+>>> type(age)
+<class 'int'>
+>>> pi = 2.14
+>>> type(pi)
+<class 'float'>
+>>> age /= 2
+>>> type(age)
+<class 'float'>
+>>> x = 10 + 3.14
+>>> type(x)
+<class 'float'>
+>>> 0b110
+6
+>>> 0o10
+8
+>>> 0xf
+15
+>>> 0Xf
+15
+>>> 0b1100111000
+824
+>>> 0o130
+88
+>>> 10e3
+10000.0
+>>> 1,23456E2
+(1, 2345600.0)
+>>> 1.23456E2
+123.456
+>>> 43.2-43.1
+0.10000000000000142
+>>> 331/17
+19.470588235294116
+>>> 331/17
+19.470588235294116
+>>> x=37
+>>> x*x
+1369
+>>> 8 + 24j
+(8+24j)
+>>> c = 1.2 + 3.4J
+>>> type(1.2+3.4j)
+<class 'complex'>
+>>> c.real
+1.2
+>>> c.img
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'img'
+>>> c.imag
+3.4
+>>> c.conjungate()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'conjungate'
+>>> c = 123+456j
+>>> c.conjugate()
+(123-456j)
+>>> c = 123+456i
+  File "<stdin>", line 1
+    c = 123+456i
+               ^
+SyntaxError: invalid syntax
+>>> c = 123+456j
+>>> c.conjugate()
+(123-456j)
+>>> int(12.7)
+12
+>>> int('321')
+321
+>>> float(456)
+456.0
+>>> float('65.4')
+65.4
+>>> complex('1234e5')
+(123400000+0j)
+>>> complex('1.23+45.6j')
+(1.23+45.6j)
+>>> str(1.23)
+'1.23'
+>>> float('8.15')
+8.15
+>>> complex(9.87)
+(9.87+0j)
+>>> greeting = 'Hello'
+>>> print(greeting)
+Hello
+>>> type(greeting)
+<class 'str'>
+>>> to= "World"
+>>> print(yto)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'yto' is not defined
+>>> print(to)
+World
+>>> say_hello = greeting + "," + to
+>>> print(say_hello)
+Hello,World
+>>> print("Hello"*5)
+HelloHelloHelloHelloHello
+>>> print("\"Hello\"\n"+to)
+"Hello"
+World
+>>> multiline = """Happy
+... Programming """
+>>> print(multiline)
+Happy
+Programming 
+>>> apple = """ Apple is delicuse, Ok ?"""
+>>> print(apple)
+ Apple is delicuse, Ok ?
+>>> 
