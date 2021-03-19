@@ -1,0 +1,239 @@
+Last login: Fri Mar 19 09:40:35 on ttys000
+mac@ieunbyeol ~ % python3
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(2)
+2
+>>> print('Hello'+str(10))
+Hello10
+>>> print('Hello, '+str(1))
+Hello, 1
+>>> 'Hello, 'Python'"
+  File "<stdin>", line 1
+    'Hello, 'Python'"
+             ^
+SyntaxError: invalid syntax
+>>> "Hello, 'Python'"
+"Hello, 'Python'"
+>>> "Hello, 'Python'"
+"Hello, 'Python'"
+>>> print(3+5)
+8
+>>> print(1,2,3,"Hello","World!")
+1 2 3 Hello World!
+>>> print("3 + 5 =",8)
+3 + 5 = 8
+>>> s = "Life is too short, You need Python."
+>>> print(s[3:7])
+e is
+>>> print(s[-10:-7])
+ed 
+>>> print(s[3:-10])
+e is too short, You ne
+>>> print(s[3:2])
+
+>>> print( :-7)
+  File "<stdin>", line 1
+    print( :-7)
+           ^
+SyntaxError: invalid syntax
+>>> print(s[ :-7])
+Life is too short, You need 
+>>> a = "Pythongood"
+>>> print(a[1:7:2])
+yhn
+>>> print(a[4:-3])
+ong
+>>> h = 'Hello World'
+>>> len(h)
+11
+>>> h.count("p")
+0
+>>> h.count("H")
+1
+>>> h.count("h")
+0
+>>> h.count("H")
+1
+>>> h.upper()
+'HELLO WORLD'
+>>> h.lower()
+'hello world'
+>>> h.strip()
+'Hello World'
+>>> h.replace("Happy","Funny")
+'Hello World'
+>>> h="Happy Programming!"
+>>> h.replace("Happy","Funny")
+'Funny Programming!'
+>>> h.find("ap")
+1
+>>> h.find("a")
+1
+>>> h.find("zoo")
+-1
+>>> table = str.marketrans('aeiou','12345')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'str' has no attribute 'marketrans'
+>>> table = str.maketrans('aeiou','12345')
+>>> 'apple'.translate(table)
+'1ppl2'
+>>> 'Hello, Python'
+'Hello, Python'
+>>> 'Happy Programming!'.index('ro')
+7
+>>> 'Happy Programming!'.index('rx')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> 'python'.Ijust(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'Ijust'
+>>> 'python'.ljust(10)
+'python    '
+>>> 'python'.rjust(10)
+'    python'
+>>> 'python'.rjust(10).upper()
+'    PYTHON'
+>>> '35'.zfill(4)
+'0035'
+>>> '3.5'.zfill(6)
+'0003.5'
+>>> 'hello'.zfill(10)
+'00000hello'
+>>> h="  Happy Programming! "
+>>> "a" in h
+True
+>>> "b" in h
+False
+>>> x = "01::23::ab::&&"
+>>> y = x.spilt("::")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'spilt'
+>>> y = x.split("::")
+>>> y
+['01', '23', 'ab', '&&']
+>>> ", ".join(y)
+'01, 23, ab, &&'
+>>> '01 23 ab &&'.split()
+['01', '23', 'ab', '&&']
+>>> x = "01::23::ab::&&"
+>>> y = split(" ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'split' is not defined
+>>> y = x.split(" ")
+>>> y
+['01::23::ab::&&']
+>>> y = x.join(" ","-")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: str.join() takes exactly one argument (2 given)
+>>> y = x.join(" ",-)
+  File "<stdin>", line 1
+    y = x.join(" ",-)
+                    ^
+SyntaxError: invalid syntax
+>>> x = "01::23::ab::&&"
+>>> y = x.join(-)
+  File "<stdin>", line 1
+    y = x.join(-)
+                ^
+SyntaxError: invalid syntax
+>>> y = x.join("-")
+>>> y
+'-'
+>>> join(y)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'join' is not defined
+>>> 'I am %s.'% 'James'
+'I am James.'
+>>> '저는 이름은 %s 입니다' % '이은별'
+'저는 이름은 이은별 입니다'
+>>> '저는 %d 살 입니다.' % 18
+'저는 18 살 입니다.'
+>>> '저는 %s 과에 재학중 입니다.' % 'SW개발'
+'저는 SW개발 과에 재학중 입니다.'
+>>> '%.2f' % 2.3
+'2.30'
+>>> '%.3f' % 2.3
+'2.300'
+>>> '%.3f' % 2.3
+'2.300'
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % '이은별', 18
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % '이은별'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % '이은별' % 18
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % '이은별'+18
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % ('이은별'),18
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> '제 이름은 %s 이고 , 제 나이는 %d 살 입니다.' % ('이은별',18)
+'제 이름은 이은별 이고 , 제 나이는 18 살 입니다.'
+>>> //문자열 포매팅
+  File "<stdin>", line 1
+    //문자열 포매팅
+    ^
+SyntaxError: invalid syntax
+>>> 'Hello, {0}'.format('world!')
+'Hello, world!'
+>>> 'Hello, {0}'.format(100)
+'Hello, 100'
+>>> 'Hello, {0}{2}{1}'.format('Python','Script',3.6)
+'Hello, Python3.6Script'
+>>> 'Hello, {0} {2} {1}'.format('Python','Script',3.6)
+'Hello, Python 3.6 Script'
+>>> language = 'Python'
+>>> version = 3.6
+>>> f'Hello, {language} {version}'
+'Hello, Python 3.6'
+>>> 'python'. ljust(10)
+'python    '
+>>> 
+>>> "{:d}".format(515)
+'515'
+>>> "{:5d}".format(515)
+'  515'
+>>> "{+5d}".format(515)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: '+5d'
+>>> "{:+5d}".format(515)
+' +515'
+>>> "{:=+5d}".format(515)
+'+ 515'
+>>> "{:05d}".format(515)
+'00515'
+>>> "{:+05d}".format(515)
+'+0515'
+>>> "{:f}".format(11.17)
+'11.170000'
+>>> "{:12f}".format(11.17)
+'   11.170000'
+>>> "{:12.1f}".format(11.17)
+'        11.2'
+>>> "{:12.1f}.format(11.17)
+  File "<stdin>", line 1
+    "{:12.1f}.format(11.17)
+                           ^
+SyntaxError: EOL while scanning string literal
+>>> "{:12.1f}".format(11.17)
+'        11.2'
+>>> 
