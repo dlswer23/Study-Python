@@ -1,0 +1,39 @@
+Last login: Fri Apr 23 08:19:57 on console
+mac@ieunbyeol ~ % python3
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> pi = 3.14152
+>>> print(round(pi))
+3
+>>> print(round(pi,0))
+3.0
+>>> print(round(pi,1))
+3.1
+>>> print(round(pi,2))
+3.14
+>>> print(round(pi,4))
+3.1415
+>>> print("소수점 4자리의 반올림은 " ,round(pi,4))
+소수점 4자리의 반올림은  3.1415
+>>> list = ['d','c','a','b']
+>>> list.reverse()
+>>> print(list)
+['b', 'a', 'c', 'd']
+>>> list.sort()
+>>> print(list)
+['a', 'b', 'c', 'd']
+>>> list.sort(reverse=true)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> list.sort(reverse=True)
+>>> print(list)
+['d', 'c', 'b', 'a']
+>>> for index,value in enumerate(list):
+... print(value)
+  File "<stdin>", line 2
+    print(value)
+    ^
+IndentationError: expected an indented block
+>>> 
