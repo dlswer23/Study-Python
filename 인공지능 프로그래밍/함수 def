@@ -1,0 +1,67 @@
+Last login: Sun May 30 00:39:31 on ttys000
+mac@ieunbyeol ~ % python3
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def add(a,b):
+...     return a+b
+... 
+>>> a = 2
+>>> b = 3
+>>> c = add(a,b)
+>>> print(c)
+5
+>>> def add(a,b):
+...     return = a+b
+  File "<stdin>", line 2
+    return = a+b
+           ^
+SyntaxError: invalid syntax
+>>> def say():
+...     return 'Hi'
+... 
+>>> say
+<function say at 0x7f8c1103d040>
+>>> a = say()
+>>> print(a)
+Hi
+>>> def say():
+...     print('Hi')
+... 
+>>> say()
+Hi
+>>> def add(a,b):
+...     return a+b
+... 
+>>> result = add(a=3,b=5)
+>>> print(result)
+8
+>>> def add+many(*args):
+  File "<stdin>", line 1
+    def add+many(*args):
+           ^
+SyntaxError: invalid syntax
+>>> def add_many(*args):
+...     result = 0
+...     for i in args:
+...             result = result + i
+...     result result
+  File "<stdin>", line 5
+    result result
+           ^
+SyntaxError: invalid syntax
+>>> def add_many(*args):
+...     result = 0
+...     for i in args:
+...             result = result + i
+...     return result
+... 
+>>> print(result)
+8
+>>> def say_myself(name,old,man = True):
+...     print("나의 이름은 %s 입니다" % name):
+  File "<stdin>", line 2
+    print("나의 이름은 %s 입니다" % name):
+                                  ^
+SyntaxError: invalid syntax
+>>> 
