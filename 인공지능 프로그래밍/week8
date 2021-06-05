@@ -1,0 +1,51 @@
+Last login: Fri Jun  4 08:18:50 on console
+mac@ieunbyeol ~ % python3
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> class Car:
+...     def __init(self,type,speed):
+...             self.type = type
+...             self.speed = speed
+...     def move(self):
+...             print(self.type + "가 "+str(self.speed) + "속도로 움직입니다 ")
+...     def speed_up(self,amount):
+...             self.speed += amount
+...     def speed_down(self,amount):
+...             self.speed -= amount
+... 
+>>> c  = Car ("스포츠카",100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Car() takes no arguments
+>>> class Car:
+...     def __init(self,type,speed):
+...             self.type = type
+...             self.speed -= amount
+... 
+>>> 
+>>> class Car:
+...     def __init__(self,type,speed):
+...             self.type = type
+...             self.speed = speed
+...     def move(self):
+...             print(self.type + "가 "+str(self.speed) + "속도로 움직입니다 ")
+...     def speed_up(self,amount):
+...             self.speed += amount
+...     def speed_down(self,amount):
+...             self.speed -= amount
+... 
+>>> c = Car("스포츠카",100)
+>>> c.speed_up(100)
+>>> c.move(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: move() takes 1 positional argument but 2 were given
+>>> c.move()
+스포츠카가 200속도로 움직입니다 
+>>> c.speed_down(10)
+>>> c.move
+<bound method Car.move of <__main__.Car object at 0x7f90ad1eebe0>>
+>>> c.move()
+스포츠카가 190속도로 움직입니다 
+>>> 
